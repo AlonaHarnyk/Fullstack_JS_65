@@ -1,111 +1,192 @@
-"use strict";
+// const number1 = Number(prompt("Enter a number, please"));
+// console.log(number1);
+// const number2 = Number(prompt("Enter a number, please"));
+// console.log(number2);
 
-// // Оголошення змінних
+// if(number1 > number2) {
+//     console.log('I am here')
+// }
 
-// const a = "variable"; // ініціалізуємо завжди зі значенням
-// a = "new variable"; // отримаємо в консолі TypeError, адже переприсвоювати значення змінним, оголошеним через const, не можна. Важливо: якщо цей рядок не закоментувати, скрипт запнеться на помилці і далі не виконуватиметься.
-// let b; // можемо ініціалізувати без присвоєння значення;
-// b = "one more variable"; // значення може бути присвоєно пізніше, після ініціалізації;
+// if (number1 > number2) {
+//     console.log('+')
+// } else {
+//     console.log('-')
+// }
 
-// // Взаємодія з користувачем
+// if (number1 > number2) {
+//   console.log(">");
+// } else if (number1 === number2) {
+//   console.log("=");
+// } else {
+//   console.log("<");
+// }
 
-// // - виведення даних:
+// if (number1 > number2) {
+//   console.log(">");
+// } else {
+//   if (number1 === number2) {
+//     console.log("=");
+//   } else {
+//     console.log("<");
+//   }
+// }
 
-// console.log("Hello!");
-// alert("Hello!");
+// if(number1 > 50 && number2 > 50) {
+//     console.log('super')
+// }
 
-// // - отримання даних:
+// const number1 = 10
 
-// const answer = confirm("Is your name Ivan?"); // користувач може відповісти так або відхилити питання
-// console.log(answer)
-// prompt("What is your name?"); // користувач  може ввести якісь дані або відхилити питання\
-// let userName = prompt("What is your name?");
-// console.log(userName)
-// console.log(typeof userName)
-// userName = prompt("What is your name?");
-// console.log(userName)
+// if (number1 > 20) {
+//     console.log('true')
+// } else {
+//     console.log('false')
+// }
 
-// // Оператори порівняння (<, >, <=, >=, ==, ===, !=, !==)
+// number1 > 20 ? console.log('true') : console.log('false')
 
-// // Загальні правила порівняння
-// // Результатом порівняння буде бульове значення.
-// // При порівнянні різних типів за допомогою операторів == та =! операнди приводяться до числа
-// // null не дорівнює нічому крім себе та undefined.
-// // undefined не дорівнює нічому крім себе та null.
-// // NaN не дорівнює нічому, навіть самому собі
-// // Рядки між собою порівнюються за unicode (посимвольно).
+// const number2 = 20;
+// number2 > 20
+//   ? console.log(">")
+//   : number3 === 20
+//   ? console.log("=")
+//   : console.log("<");
 
-// // Правила приведення різних типів до числа:
-// // true --> 1
-// // false --> 0
-// // '', а також рядок з пробілами --> 0
-// // null --> 0
-// // undefined --> NaN
-// // не порожній рядок --> якщо рядок складається лише з цифр, відбувається приведення до числа. В іншому випадку - NaN.
+// const number = Number(prompt("Enter a number berween 0 and 3"));
 
-// Оператор ==
-// console.log(null == 0); // false
-// console.log(undefined == 0); // false
-// console.log(undefined == null); // true
-// console.log("123" == 123); // true
-// console.log(true == "1"); // true
-// console.log(4 == 5); // false
+// switch (number) {
+//   case 0:
+//     console.log("Your entered 0");
+//     break;
+//   case 1:
+//     console.log("Your entered 1");
+//     break;
+//   case 2:
+//     console.log("Your entered 2");
+//     break;
+//   case 3:
+//     console.log("Your entered 3");
+//     break;
+//   default:
+//     console.log("Your entered another number");
+// }
 
-// // Оператор ===
-// console.log("123" === 123); // false
-// console.log(null === null); // true
-// console.log(2 + 2 === 4); // true
-// console.log(NaN === NaN); // false
-// console.log(undefined === null); // false
+// if (number === 0) {
+//   console.log("Your entered 0");
+// } else if (number === 1) {
+//   console.log("Your entered 1");
+// } else if (number === 2) {
+//   console.log("Your entered 2");
+// } else if (number === 3) {
+//   console.log("Your entered 3");
+// } else {
+//   console.log("Your entered another number");
+// }
 
-// // Оператор !=
-// console.log("4" != 4); // false
+// const a = 1;
+// // console.log(b)
+// if (2 > 1) {
+//     const a = 2;
+//     const b = 3;
+//     console.log(a)
+//     if (4 > 3) {
+//         const a = 4;
+//         // const b = 5
+//         // const c = 6
+//     //     console.log(a)
+//     }
+// }
 
-// // Оператор !==
-// console.log("4" !== 4); // true
+// console.log(a)
 
-// console.log(null > 0) // false
-// console.log(null >= 0) // true
+// let a = 1;
+// // console.log(b)
+// if (2 > 1) {
+//   a = 2;
+//   const b = 3;
+//   // console.log(c)
+//   if (4 > 3) {
+//     // const a = 4;
+//     // const b = 5
+//     // const c = 6
+//     // console.log(a)
+//   }
+// }
 
+// console.log(a);
 
-// // Number.isNaN
+// let counter = 1;
 
-// const a = 123;
-// const b = "qwerty";
+// while (counter <= 5) {
+//   console.log("counter: ", counter);
+// //   counter = counter + 1
+//   counter += 1;
+// }
 
-// console.log(Number.isNaN(a)); // false
-// console.log(Number.isNaN(b)); // false
+// console.log('next')
 
-// const toNumber = Number(b);
-// console.log(toNumber); // NaN
-// console.log(Number.isNaN(toNumber)); // true
-// console.log(toNumber == NaN) // false
+// let number
 
+// do{
+//     console.log('here')
+//     number = prompt('Input number, that bigger then 100')
+// } while (number <=100)
 
-// const data = prompt("Enter a number, please");
-// console.log(data);
+// console.log(number)
 
-// const dataToNumber = Number.parseInt(data);
-// console.log(dataToNumber);
+// let word = "";
 
-// const isNaN = Number.isNaN(dataToNumber);
-// console.log(isNaN);
+// for (let i = 0; i < 3; i += 1) {
+//   console.log("Iteration:", i + 1);
+//   console.log("previous string", word);
+//   console.log(i);
+//   word += i;
+//   console.log("next string", word);
+// }
 
-// const num1 = 0.3;
-// const num2 = 0.6;
-// const sum1 = num1 + num2;
-// console.log(sum1)
-// console.log((num1*100 + num2*100) / 100 )
-// console.log(sum1.toFixed(3));
-// const fixedSum1 = Number(sum1.toFixed(3));
-// console.log(fixedSum1);
+// console.log('final:', word)
 
-// Приведення до рядка
-// const num = 123;
-// const str1 = String(num)
-// console.log(str1)
-// const str2 = num + ''
-// console.log(str2)
-// const str3 = num.toString()
-// console.log(str3)
+// const word = "javascript";
 
+// let word2 = "";
+
+// for (let i = 0; i < word.length; i += 1) {
+//   console.log("Iteration:", i + 1);
+//   console.log("previous string", word2);
+//   console.log(word[i]);
+
+//   word2 += word[i];
+//   console.log("next string", word2);
+// }
+
+// console.log(word2);
+
+// const num1 = 5
+// const num2 = 10
+
+// for(let i = num2; i >= num1; i-=1) {
+//     console.log(i)
+// }
+
+// for(let a = 100; a > 50; a -= 10) {
+//     console.log(a)
+// }
+
+// for (let i = 0; i <= 5; i += 1) {
+//     console.log(i);
+
+//     if (i === 1) {
+//       console.log("Знайшли число 1, перериваємо виконання циклу");
+//       break;
+//     }
+//   }
+
+//   console.log("Лог після циклу");
+
+//   for (let i = 0; i < 15; i += 1) {
+//     console.log( 'before', i);
+//     if (i / 3 === 4 || i / 2 === 5) {
+//       continue;
+//     }
+//     console.log('after', i);
+//   }
