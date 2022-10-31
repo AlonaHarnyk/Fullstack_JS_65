@@ -1,192 +1,156 @@
-// const number1 = Number(prompt("Enter a number, please"));
-// console.log(number1);
-// const number2 = Number(prompt("Enter a number, please"));
-// console.log(number2);
-
-// if(number1 > number2) {
-//     console.log('I am here')
+// const a = [1, 2, 3, 4, 5]
+// for(let i = 0; i < a.length; i+=1) {
+//     console.log(a[i] + 10)
+// }
+// for(const elem of a) {
+//     console.log(elem + 10)
 // }
 
-// if (number1 > number2) {
-//     console.log('+')
-// } else {
-//     console.log('-')
+// const a = 2;
+// const b = a;
+// console.log(a === b)
+
+// const array1 = [1, 2, 3];
+// const array2 = array1;
+
+// console.log(array1)
+// console.log(array2)
+// console.log(array1 === array2)
+
+// array1[0] = 10;
+
+// console.log(array1)
+// console.log(array2);
+
+// array2[2] = 5;
+
+// console.log(array1)
+
+// const array3 = array2
+
+// console.log(array3)
+
+// array3[1] = 100;
+
+// console.log(array1)
+
+// array2.length = 0;
+
+// console.log(array3)
+
+// array1[2] = 1000;
+// console.log(array3)
+
+// for (const elem of array3) {
+//     console.log(elem)
 // }
+// console.log(array3.length)
 
-// if (number1 > number2) {
-//   console.log(">");
-// } else if (number1 === number2) {
-//   console.log("=");
-// } else {
-//   console.log("<");
-// }
 
-// if (number1 > number2) {
-//   console.log(">");
-// } else {
-//   if (number1 === number2) {
-//     console.log("=");
-//   } else {
-//     console.log("<");
-//   }
-// }
+// let array1 = [1, 3, 5]
+// let array2 = array1;
 
-// if(number1 > 50 && number2 > 50) {
-//     console.log('super')
-// }
+// array1[0] = 50;
+// console.log(array2)
 
-// const number1 = 10
+// array1 = [9, 90, 900]
 
-// if (number1 > 20) {
-//     console.log('true')
-// } else {
-//     console.log('false')
-// }
+// console.log(array1)
+// console.log(array2)
 
-// number1 > 20 ? console.log('true') : console.log('false')
+// array2 = array1;
 
-// const number2 = 20;
-// number2 > 20
-//   ? console.log(">")
-//   : number3 === 20
-//   ? console.log("=")
-//   : console.log("<");
+// console.log(array1)
+// console.log(array2)
 
-// const number = Number(prompt("Enter a number berween 0 and 3"));
+// const a = [1, 2, 3]
+// const b = a
+// console.log(a === b) // true
 
-// switch (number) {
-//   case 0:
-//     console.log("Your entered 0");
-//     break;
-//   case 1:
-//     console.log("Your entered 1");
-//     break;
-//   case 2:
-//     console.log("Your entered 2");
-//     break;
-//   case 3:
-//     console.log("Your entered 3");
-//     break;
-//   default:
-//     console.log("Your entered another number");
-// }
+// const c = [1, 2, 3]
+// const d = [1, 2, 3]
+// console.log(c === d) // false
+// console.log(c[0] === d[0]) // true
 
-// if (number === 0) {
-//   console.log("Your entered 0");
-// } else if (number === 1) {
-//   console.log("Your entered 1");
-// } else if (number === 2) {
-//   console.log("Your entered 2");
-// } else if (number === 3) {
-//   console.log("Your entered 3");
-// } else {
-//   console.log("Your entered another number");
-// }
+// const e = [1, 2, [3, 4]]
+// // const f = [1, 2, [3, 4]]
+// // console.log(e[2] === f[2]) // false
+// console.log(e[2][0]) // 3
 
-// const a = 1;
-// // console.log(b)
-// if (2 > 1) {
-//     const a = 2;
-//     const b = 3;
-//     console.log(a)
-//     if (4 > 3) {
-//         const a = 4;
-//         // const b = 5
-//         // const c = 6
-//     //     console.log(a)
-//     }
-// }
 
-// console.log(a)
+// const string = '1-!2-!3-!4-!5-!6-!7-!8-!9'
 
-// let a = 1;
-// // console.log(b)
-// if (2 > 1) {
-//   a = 2;
-//   const b = 3;
-//   // console.log(c)
-//   if (4 > 3) {
-//     // const a = 4;
-//     // const b = 5
-//     // const c = 6
-//     // console.log(a)
-//   }
-// }
+// console.log(string.split('!'))
 
-// console.log(a);
+// const string2 = '123456789'
 
-// let counter = 1;
+// const array = string2.split('')
 
-// while (counter <= 5) {
-//   console.log("counter: ", counter);
-// //   counter = counter + 1
-//   counter += 1;
-// }
+// console.log(array)
 
-// console.log('next')
 
-// let number
+// const array3 = [1, 2, 3, 4, 5, 6, 7];
+// const string3 = array3.join('***')
+// console.log(string3)
 
-// do{
-//     console.log('here')
-//     number = prompt('Input number, that bigger then 100')
-// } while (number <=100)
 
-// console.log(number)
+// const array5 = [1,4,6,7,4,7,89]
+// // const res1 = array5.includes(100 && 4)
+// // console.log(res1) // true
+// const res2 = array5.includes(100) && array5.includes(4)
+// console.log(res2) // false
 
-// let word = "";
+// const emptyArray = [0, 90]
+// const length = emptyArray.push(1, 2, 3, 100, 200, 1000, 100000)
+// console.log(emptyArray)
+// console.log(length)
 
-// for (let i = 0; i < 3; i += 1) {
-//   console.log("Iteration:", i + 1);
-//   console.log("previous string", word);
-//   console.log(i);
-//   word += i;
-//   console.log("next string", word);
-// }
+// const notEmptyArray = [1, 2, 3, 4, 5]
+// const deletedEl = notEmptyArray.pop()
+// console.log(notEmptyArray)
+// console.log(deletedEl)
 
-// console.log('final:', word)
+// const superArray = [1, 2, 3, 4, 5]
+// const length1 = superArray.unshift(5, 10)
+// console.log(superArray) 
+// console.log(length1)
 
-// const word = "javascript";
+// const superArray1 = [1, 2, 3, 4, 5]
+// const deletedEl1 = superArray1.shift()
+// console.log(superArray1)
+// console.log(deletedEl1)
 
-// let word2 = "";
+// const array6 = [1, 2, 3, 4, 5, 6, 7]
+// const array7 = array6.slice(0, 5)
+// // console.log(array7)
+// const array8 = array6.slice(-2)
+// console.log(array8)
+// console.log(array6)
 
-// for (let i = 0; i < word.length; i += 1) {
-//   console.log("Iteration:", i + 1);
-//   console.log("previous string", word2);
-//   console.log(word[i]);
 
-//   word2 += word[i];
-//   console.log("next string", word2);
-// }
+// const numbers2 = [1, 2, 3, 4, 5, 5, 5, 6, 7, 8, 9]
+// const copy = numbers2.slice()
+// const deleted = copy.splice(5, 2)
+// console.log(copy)
+// console.log(deleted)
+// console.log(numbers2)
 
-// console.log(word2);
+// const numbers3 = [1, 2, 3, 6, 7, 8, 9]
+// const copy1 = numbers3.slice()
+// const deleted1 = copy1.splice(3, 0, 4, 5)
+// console.log(copy1)
+// console.log(deleted1)
 
-// const num1 = 5
-// const num2 = 10
+// const numbers4 = [1, 2, 3, 4, 4, 4, 7]
+// const copy2 = numbers4.slice()
+// const deleted2 = copy2.splice(4, 2, 5, 6)
+// console.log(copy2)
+// console.log(deleted2)
 
-// for(let i = num2; i >= num1; i-=1) {
-//     console.log(i)
-// }
 
-// for(let a = 100; a > 50; a -= 10) {
-//     console.log(a)
-// }
-
-// for (let i = 0; i <= 5; i += 1) {
-//     console.log(i);
-
-//     if (i === 1) {
-//       console.log("Знайшли число 1, перериваємо виконання циклу");
-//       break;
-//     }
-//   }
-
-//   console.log("Лог після циклу");
-
-//   for (let i = 0; i < 15; i += 1) {
-//     console.log( 'before', i);
-//     if (i / 3 === 4 || i / 2 === 5) {
-//       continue;
-//     }
-//     console.log('after', i);
-//   }
+// const a = [1, 2, 3];
+// const b = [5, 6, 7]
+// const c = 4
+    
+// const arr = a.concat(c, b, 'abc') // [1, 2, 3, 4, 5, 6, 7, 'abc']
+// console.log(arr)
