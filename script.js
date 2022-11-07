@@ -1,177 +1,175 @@
+  
+// const book = {
+//     title: "The Last Kingdom",
+//     author: "Bernard Cornwell",
+//     genres: ["historical prose", "adventure"],
+//     isPublic: false,
+//     rating: 0,
+//     data: {
+//         a: 1,
+//         b: {
+//           test: 'test!!!'
+//         },
+//         c: 3
+//     }
+//   };
 
-// function isIncluded(array, number) {
-//     const result = array.includes(number)
-//     console.log(result)
-// }
 
-// isIncluded([1, 2, 5, 8, 3], 4) // false
-// isIncluded([1, 2, 5, 8, 3], 5) // true
-// isIncluded(5, [1, 3, 5]) // error
+// const x = 'author';
 
-
-// function isIncluded(array, number) {
-//     const result = array.includes(number)
-//     console.log(result)
-//     // return result
-//     // console.log(result)
-// }
-
-// const a = isIncluded([1, 2, 5, 8, 3], 4)
+// const a = book.title
 // console.log(a)
+// console.log(book.genres)
+// console.log(book.data.a)
+// console.log(book.data.b.test)
 
-// console.log(isIncluded([1, 2, 5, 8, 3], 4)) // false
-// console.log(isIncluded([1, 2, 5, 8, 3], 5)) // true
+// console.log(book['genres']);
+// console.log(book[genres]); // error
 
-// const a = isIncluded([1, 2, 5, 8, 3], 4)
-// console.log(a)
-// const b = isIncluded([1, 2, 5, 8, 3], 5)
-// console.log(b)
+// console.log(book['author']) //  "Bernard Cornwell"
+// console.log(book[x]) // "Bernard Cornwell"
 
-// function add(a, b) {
-//   // const sum = a + b
-//   // return sum
+// console.log(book.x) // undefined
 
-//   return a + b;
-// }
+// console.log(book['data']['a']) // 1
 
-// const number1 = add(1, 3);
-// const number2 = add(5, 7);
+// console.log(book)
 
-// const sum = number1 + number2
+// book.isPublic = true;
 
-// const sum = add(1, 3) + add(5, 7)
-// console.log(sum)
+// console.log(book)
 
-// function add(a, b) {
-//     if (typeof a !== 'number' || typeof b !== 'number') {
-//         console.log('One of operands is not a number')
-//         return
-//         // return 'One of operands is not a number'
+// book.genres.push('tale')
+// console.log(book)
+
+// book.price = '10$'
+// book['price'] = '10$'
+
+// console.log(book)
+
+
+// const name = "Генрі Сибола";
+// const age = 25;
+
+
+// const user = {
+//   name: name,
+//   age: age,
+// };
+
+// console.log(user)
+
+// const user = {
+//   name,
+//   age,
+// };
+
+// console.log(user)
+
+// console.log(user.name); // "Генрі Сибола"
+// console.log(user.age); // 25
+
+
+// const student = {
+//     name: 'Jhon',
+//     email: 'jhon@gmail.com',
+//     homeworkResults: [],
+//     getName() {
+//         console.log(this.name)
+//     },
+//     getEmail() {
+//         console.log(this.email)
+//     },
+//     getHWResults() {
+//         console.log(this.homeworkResults)
+//     },
+//     addHomeworkResults(topic, sucess) {
+//         const item = {topic, sucess}
+//         this.homeworkResults.push(item)
 //     }
-//     return a + b
 // }
 
-// // console.log(add(3, 7))
-// console.log(add( 5, '10'))
+// student.getName()
+// student.getEmail()
+// student.getHWResults()
+// student.addHomeworkResults('HTML/CSS', true)
+// student.getHWResults()
+// student.addHomeworkResults('JS', true)
+// student.getHWResults()
 
 
-// function add(a = 0, b = 0) {
-//   // const sum = a + b
-//   // return sum
-//  console.log(a)
-//  console.log(b)
-//  return a + b;
-// }
+// const book = {
+//     title: "The Last Kingdom",
+//     author: "Bernard Cornwell",
+//     genres: ["historical prose", "adventure"],
+//     rating: 8.38,
+//   };
 
-// console.log(add(1))
-
-// function add(a = 0, b = 0, c = 0) {
-//     console.log(a + b + c)
-// }
-
-// const num1 = 3;
-// const num2 = 4
-
-// // add(num1, num2)
-// // add(3)
-// add()
-
-// function add() {
-//     console.log(arguments)
-//     console.log(arguments[1])
-//     console.log(arguments.length)
-//     let sum = 0;
-//     for(const arg of arguments) {
-//         // console.log(arg)
-//         sum +=arg
-//     }
-//     // console.log(sum)
-//     return sum
-// }
-
-// add(5, 7, 4, 9, 10)
-// console.log(add(5, 7, 4, 9, 10))
-
-
-// function isIncluded() {
-//     console.log(arguments)
-//     const array = Array.from(arguments);
-//     console.log(array)
-//     const number = arguments[arguments.length - 1]
-//     console.log(number)
-//     const array2 = array.slice(0, -1)
-//     console.log(array2)
-//     console.log(array2.includes(number))
-//     return array2.includes(number)
-// }
-
-// function isIncluded(...array) {
-//     console.log(array)
-//     // const number = arguments[arguments.length - 1]
-//     // console.log(number)
-//     // const array2 = array.slice(0, -1)
-//     // console.log(array2)
-//     // console.log(array2.includes(number))
-//     // return array2.includes(number)
-// }
-
-// isIncluded(2, 5, 6, 8, 4, 9, 3, 7)
-
-// const add = function(a, b) {
-//     if(typeof a !== 'number' || typeof b !== 'number') {
-//         return 'One of operands is not a number'
-//         // return
-//     }
-//     return a + b
-// }
-
-// console.log(add(3, 7))
-// console.log(add( 5, '10'))
-
-
-
-// const a = 1;
-// console.log(a);
-// function logger() {
-//   const a = 2;
-//   // console.log(a)
-//   if (a === 2) {
-//     // const a = 3;
-//     // console.log(a)
-//     for (let i = 0; i <= 10; i += 1) {
-//       //   const a = 4;
-//       console.log(a);
-//       // console.log(a + i)
-//     }
+//   for (const key in book) {
+//     // Ключ
+//     console.log('key', key);
+//     // Значення властивості з таким ключем
+//     console.log(book.key)
+//     console.log('value', book[key]);
 //   }
+ 
+
+const animal = {
+  legs: 4,
+  eyes: 2
+};
+
+// // console.log(animal)
+
+const dog = Object.create(animal);
+
+// // console.log(dog)
+
+dog.name = "Манго"
+
+
+// console.log(dog); // {name: 'Манго'}
+// console.log(dog.name); // 'Манго'
+// console.log(dog.legs); // 4
+
+// for (const a in dog) {
+//   console.log(a)
 // }
 
-// logger();
-
-
-
-
-console.log(111)
-
-function bar() {
-    console.log("bar");
-    console.log(222)
-  }
+// for (const key in dog) {
   
-  function baz() {
-    console.log("baz");
-    console.log(444)
-  }
-  
-  function foo() {
-    console.log("foo");
-    bar();
-    console.log(333)
-    baz();
-      console.log(555)
-      foo()
-  }
-  
-  foo();
+//   // console.log(dog.hasOwnProperty(key))
+// if (dog.hasOwnProperty(key)) {
+//     console.log(key)
+// }
+// }
 
-  console.log('!!!')
+
+// dog.eyeColor = 'grey';
+
+// const keys = Object.keys(dog)
+// console.log(keys)
+
+// for (const item of keys) {
+//   console.log(item)
+// }
+
+// const values = Object.values(dog)
+// console.log(values)
+
+// const entries = Object.entries(dog)
+// console.log(entries)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
